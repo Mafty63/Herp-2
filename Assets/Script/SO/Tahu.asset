@@ -22,3 +22,4 @@ MonoBehaviour:
   - {fileID: 2798475239084085517, guid: 1572bdd6a692dd748a55ecd3e0bf1ec2, type: 3}
   sliced: 0
   totalSliced: 0
+  smoothMaterial: {fileID: 2228755240348014263, guid: 7d5f56e6fa6683648b695eaa33a6daa3, type: 3}

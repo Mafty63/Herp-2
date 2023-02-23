@@ -148,5 +148,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _mouseDelta: {x: 0, y: 0, z: 0}
   _minMouseDeltaOnLine: -5
-  _ingredientSO: {fileID: 11400000, guid: 2fb3805c57f0257409a7b525b2643695, type: 2}
+  _ingredientSO: {fileID: 0}
   _onLine: 0

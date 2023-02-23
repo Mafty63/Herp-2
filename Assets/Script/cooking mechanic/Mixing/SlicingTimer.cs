@@ -1,7 +1,7 @@
 using UnityEngine;
 using UnityEngine.UI;
 
-namespace Slicing.Timer
+namespace Mixing.Timer
 {
     public class SlicingTimer : MonoBehaviour
     {

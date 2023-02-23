@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 5802001919132177745}
   m_Layer: 0
   m_Name: Square (2)
-  m_TagString: Slicing/Pisau
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -97,7 +97,7 @@ GameObject:
   - component: {fileID: 5802001919895338643}
   m_Layer: 0
   m_Name: mata
-  m_TagString: Slicing/Pisau
+  m_TagString: Slicing/Knive
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -207,7 +207,7 @@ GameObject:
   - component: {fileID: 5802001919933108139}
   m_Layer: 0
   m_Name: Pisau 2
-  m_TagString: Slicing/Knive
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

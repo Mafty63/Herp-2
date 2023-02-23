@@ -1,15 +1,20 @@
 using UnityEngine;
+using Slicing.Ingredient;
 
 [RequireComponent(typeof(BoxCollider2D), typeof(Rigidbody2D))]
 public class LineController : MonoBehaviour
 {
     private Vector3 _currentMousePosition;
     private Vector3 _firstMousePosition;
-    [SerializeField] private Vector3 _mouseDelta;
+    private Vector3 _mouseDelta;
     [SerializeField] private float _minMouseDeltaOnLine;
-    [SerializeField] private IngredientSO _ingredientSO;
-    public bool _onLine;
+    private IngredientSO _ingredientSO;
+    private bool _onLine;
 
+    private void Awake()
+    {
+        _ingredientSO = IngredientHandler.instance.getIngredientSO();
+    }
     void Update()
     {
         if (Input.GetMouseButtonDown(0) && _onLine)
