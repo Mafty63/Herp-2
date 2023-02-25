@@ -33,6 +33,7 @@ namespace Slicing.Ingredient
             if (_ingredientSO.totalSliced >= 4)
             {
                 _ingredientSO.totalSliced = 0;
+                SceneHandler.instance.NextStep();
             }
         }
 

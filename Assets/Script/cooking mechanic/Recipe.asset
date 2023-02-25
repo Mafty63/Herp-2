@@ -13,9 +13,25 @@ MonoBehaviour:
   m_Name: Recipe
   m_EditorClassIdentifier: 
   recipes:
-  - name: 
+  - name: jamu sinom
     steps:
-    - sceneOrderIndex: 
-      Ingredient: {fileID: 0}
-    - sceneOrderIndex: 
-      Ingredient: {fileID: 0}
+    - sceneName: slicing
+      Ingredient: {fileID: 11400000, guid: 2fb3805c57f0257409a7b525b2643695, type: 2}
+    - sceneName: mixing
+      Ingredient: {fileID: 11400000, guid: 2fb3805c57f0257409a7b525b2643695, type: 2}
+    - sceneName: peeling
+      Ingredient: {fileID: 11400000, guid: 2fb3805c57f0257409a7b525b2643695, type: 2}
+    - sceneName: slicing
+      Ingredient: {fileID: 11400000, guid: 2fb3805c57f0257409a7b525b2643695, type: 2}
+    - sceneName: smooting
+      Ingredient: {fileID: 11400000, guid: 2fb3805c57f0257409a7b525b2643695, type: 2}
+    - sceneName: slicing
+      Ingredient: {fileID: 11400000, guid: 2fb3805c57f0257409a7b525b2643695, type: 2}
+    - sceneName: 'slicing '
+      Ingredient: {fileID: 11400000, guid: 2fb3805c57f0257409a7b525b2643695, type: 2}
+    - sceneName: smoothing
+      Ingredient: {fileID: 11400000, guid: 2fb3805c57f0257409a7b525b2643695, type: 2}
+    - sceneName: stiring
+      Ingredient: {fileID: 11400000, guid: 2fb3805c57f0257409a7b525b2643695, type: 2}
+    - sceneName: filtering
+      Ingredient: {fileID: 11400000, guid: 2fb3805c57f0257409a7b525b2643695, type: 2}

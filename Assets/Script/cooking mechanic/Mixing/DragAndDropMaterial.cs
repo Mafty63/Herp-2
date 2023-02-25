@@ -1,4 +1,5 @@
 using UnityEngine;
+using Mixing.Timer;
 
 public class DragAndDropMaterial : MonoBehaviour
 {
@@ -6,10 +7,13 @@ public class DragAndDropMaterial : MonoBehaviour
     private Vector3 _mousePosition;
     private Vector3 _defaultPosition;
     private bool _onBowl;
+    [SerializeField] private string _materialName;
+    private bool _onPosition;
 
     private void Awake()
     {
         _defaultPosition = transform.position;
+        _onPosition = false;
     }
 
     private void OnMouseDown()
@@ -27,17 +31,33 @@ public class DragAndDropMaterial : MonoBehaviour
 
     private void FixedUpdate()
     {
-        if (_isDragging)
+        if (_isDragging) // if dragging
         {
             _mousePosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
             _mousePosition.z = transform.position.z;
             transform.position = _mousePosition;
         }
-        else
+        else    // if dropped
         {
             if (!_onBowl)
             {
                 transform.position = _defaultPosition;
+            }
+            else
+            {
+                if (!_onPosition)
+                {
+                    if (_materialName.ToUpper() == MaterialOrder.instance.getCurrentMaterialName())
+                    {
+                        MaterialOrder.instance.nextMaterial();
+                        _onPosition = true;
+                    }
+                    else
+                    {
+                        transform.position = _defaultPosition;
+                        MixingTimer.instance.plusCurrentTime(5);
+                    }
+                }
             }
         }
     }

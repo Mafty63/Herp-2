@@ -110,11 +110,11 @@ RectTransform:
   m_Father: {fileID: 4568053726831581269}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -118.39}
-  m_SizeDelta: {x: 160, y: 36.5}
-  m_Pivot: {x: 0.5, y: 0.5}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 0}
+  m_AnchoredPosition: {x: -12.06897, y: 0}
+  m_SizeDelta: {x: -350.506, y: 166.524}
+  m_Pivot: {x: 0.5, y: 0}
 --- !u!114 &4568053725050477383
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -276,7 +276,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0.25}
   m_AnchorMax: {x: 1, y: 0.75}
-  m_AnchoredPosition: {x: -0.34999084, y: 0}
+  m_AnchoredPosition: {x: -0.3499756, y: 0}
   m_SizeDelta: {x: -10.700022, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &4568053726831581265
@@ -291,9 +291,9 @@ GameObject:
   - component: {fileID: 4568053726831581268}
   - component: {fileID: 4568053726831581267}
   - component: {fileID: 4568053726831581266}
-  - component: {fileID: 2232886265231794101}
+  - component: {fileID: -7016010193401286457}
   m_Layer: 5
-  m_Name: Timer
+  m_Name: SmootingTimer
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -381,7 +381,7 @@ MonoBehaviour:
   m_BlockingMask:
     serializedVersion: 2
     m_Bits: 4294967295
---- !u!114 &2232886265231794101
+--- !u!114 &-7016010193401286457
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -390,7 +390,8 @@ MonoBehaviour:
   m_GameObject: {fileID: 4568053726831581265}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1a6593f488da95b48be2b4e28d9d598f, type: 3}
+  m_Script: {fileID: 11500000, guid: be7710e238adcff4e87239f73d1d0381, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   _timer: 60
+  _gameOver: {fileID: 0}

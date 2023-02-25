@@ -1,10 +1,11 @@
 using UnityEngine;
 using UnityEngine.UI;
 
-namespace Mixing.Timer
+namespace Boiling.Timer
 {
-    public class SlicingTimer : MonoBehaviour
+    public class BoilingTimer : MonoBehaviour
     {
+        public static BoilingTimer instance;
         private Slider _slider;
         [Header("Coutdown time in second")]
         [SerializeField] private float _timer;
@@ -14,6 +15,16 @@ namespace Mixing.Timer
 
         void Awake()
         {
+            //If we don't currently have a game control...
+            if (instance == null)
+                //...set this one to be it...
+                instance = this;
+            //...otherwise...
+            else if (instance != this)
+                //...destroy this one because it is a duplicate.
+                Destroy(gameObject);
+            // Start is called before the first frame update
+
             _currentTime = 0;
             _slider = this.gameObject.transform.GetChild(0).GetComponent<Slider>();
             _slider.maxValue = _timer;
@@ -29,6 +40,11 @@ namespace Mixing.Timer
             {
                 _gameOver.SetActive(true);
             }
+        }
+
+        public void plusCurrentTime(float plus)
+        {
+            _currentTime += plus;
         }
     }
 }

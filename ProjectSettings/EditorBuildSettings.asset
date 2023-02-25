@@ -6,6 +6,24 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/SampleScene.unity
+    path: Assets/Scenes/HOME.unity
+    guid: 8f2b72dac5a71864ab1e895f2031a323
+  - enabled: 1
+    path: Assets/Scenes/SLICING.unity
     guid: 8c9cfa26abfee488c85f1582747f6a02
+  - enabled: 1
+    path: Assets/Scenes/SMOOTING.unity
+    guid: 302fe7569b3c6d1469debf4ba718a87e
+  - enabled: 1
+    path: Assets/Scenes/BOILING.unity
+    guid: 71f934128ca6f154faf38eb620dbf01c
+  - enabled: 1
+    path: Assets/Scenes/MIXING.unity
+    guid: d84ba6290881cc34c83a120297b634bb
+  - enabled: 1
+    path: Assets/Scenes/PEELING.unity
+    guid: 232cef5a20e0acf44919ebe53d01c714
+  - enabled: 1
+    path: Assets/Scenes/END.unity
+    guid: 448180e15195da941aa590b62becdf6d
   m_configObjects: {}

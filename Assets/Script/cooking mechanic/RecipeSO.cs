@@ -11,7 +11,7 @@ public class RecipeSO : ScriptableObject
         [System.Serializable]
         public class step
         {
-            public string sceneOrderIndex;
+            public string sceneName;
             public IngredientSO Ingredient;
         }
         public List<step> steps = new List<step>();
