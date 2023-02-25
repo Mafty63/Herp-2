@@ -1,0 +1,53 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7e78c28afbaa8104697d7d5f6956c235, type: 3}
+  m_Name: Tahu
+  m_EditorClassIdentifier: 
+  ingredientName: tahu
+  id: 1
+  slicingMaterial:
+  - {fileID: 2798475239084085517, guid: aa29998afb613ef41a9855fb41f411d8, type: 3}
+  - {fileID: 2798475239084085517, guid: 7078a2a317d19144a9cfaa5013ca7091, type: 3}
+  - {fileID: 2798475239084085517, guid: e2c02755aa329a4469dc1ffbb5054820, type: 3}
+  - {fileID: 2798475239084085517, guid: 8bee0aba8a9439342b5f78c8b3c18f26, type: 3}
+  - {fileID: 2798475239084085517, guid: 1572bdd6a692dd748a55ecd3e0bf1ec2, type: 3}
+  sliced: 0
+  totalSliced: 0
+  mixingMaterial: {fileID: 2228755240348014263, guid: 7d5f56e6fa6683648b695eaa33a6daa3, type: 3}
+  smoothingMaterial:
+  - {fileID: 6630288354487905497, guid: 5937920b6da3d56439f951548a32c765, type: 3}
+  - {fileID: 4382942095770291173, guid: 02e1d9b71664e8647932904e4933b615, type: 3}
+  - {fileID: 5885409000863347580, guid: c28fe4f4b4e9a6c4bbbadc1014af8d8e, type: 3}
+  - {fileID: 539340825677952447, guid: af90d5751cae9554890a62cfa0ac8e68, type: 3}
+  - {fileID: 6812634104208480999, guid: 2c701c1d72f829645b74465782ab7acb, type: 3}
+  - {fileID: 3285880571620776169, guid: 2136449740e17fe46861e44d57b0b344, type: 3}
+  smoothing: 0
+  totalSmothing: 0
+  peelingMaterialSide1:
+  - {fileID: 1227325750915126321, guid: 1407b5839a74db345a9e895a95948a67, type: 3}
+  - {fileID: 7959699137340196462, guid: 017886bedcb60824c90d2b0eb4c948ae, type: 3}
+  - {fileID: 5349376353650057612, guid: 613d0df7df160e1488ab7bbd20b7f117, type: 3}
+  - {fileID: 5519627476702999966, guid: 0f266e1009220b74b80bb75785c714e7, type: 3}
+  - {fileID: 9109862100361171410, guid: 0d1a46d1df2f3ce4bb920f309d54b332, type: 3}
+  - {fileID: 3112053754459640720, guid: 04b0b95d2b9199749a9bd80e22d176ed, type: 3}
+  - {fileID: 6742371785262247455, guid: 5b79d6dacb8b3eb4e92b9c3241f07226, type: 3}
+  peelingMaterialSide2:
+  - {fileID: 1227325750915126321, guid: 400bdb6719507414aa170c0b017c3b51, type: 3}
+  - {fileID: 7959699137340196462, guid: fb3db704ab57eff47808e761dd7610b3, type: 3}
+  - {fileID: 5349376353650057612, guid: 20c38faef2cfbf64daf22a4ad6ea8d40, type: 3}
+  - {fileID: 5519627476702999966, guid: 3c9dba18b805e244a91c7055e814cf9b, type: 3}
+  - {fileID: 9109862100361171410, guid: c7229cf3ea2b54a41b0f03be96b47ce6, type: 3}
+  - {fileID: 3112053754459640720, guid: 78936a2e9e8168c428d83ba6b4d7c69a, type: 3}
+  - {fileID: 6742371785262247455, guid: 75b7e9e4d37e3cf41964955dec73a533, type: 3}
+  skinPrefab: {fileID: 6424071386631166429, guid: 8dc9775f85a9a5345889a768b60ac903, type: 3}
+  peeled: 0
+  totalPeeled: 0

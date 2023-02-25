@@ -5,7 +5,6 @@ public class MaterialOrder : MonoBehaviour
 {
     public static MaterialOrder instance;
     [SerializeField] private MaterialSO _materialSO;
-    [SerializeField] private int _numberOfMaterialNeeded;
     [SerializeField] private Transform _spawnUIPoint;
     private string _currentMaterialName;
     private GameObject _currentMaterial;
@@ -26,7 +25,7 @@ public class MaterialOrder : MonoBehaviour
 
     void Start()
     {
-        for (int i = 0; i < _numberOfMaterialNeeded; i++)
+        for (int i = 0; i < _materialSO.numberOfMaterialNeeded; i++)
         {
             do
             {

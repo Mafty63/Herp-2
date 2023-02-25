@@ -62,4 +62,9 @@ public class SceneHandler : MonoBehaviour
     {
         _recipeName = recipeName.ToUpper();
     }
+
+    public IngredientSO getIngredientSO()
+    {
+        return _recipeSO.recipes[_currentRecipeIndex].steps[_currentRecipeSteps].Ingredient;
+    }
 }

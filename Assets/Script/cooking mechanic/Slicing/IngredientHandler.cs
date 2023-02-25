@@ -20,17 +20,22 @@ namespace Slicing.Ingredient
                 //...destroy this one because it is a duplicate.
                 Destroy(gameObject);
 
-            _currentIngredient = Instantiate(_ingredientSO.slicedMaterial[_ingredientSO.totalSliced], _summonPost.position, Quaternion.identity);
+            _ingredientSO = SceneHandler.instance.getIngredientSO();
+        }
+        private void Start()
+        {
+            _ingredientSO.totalSliced = 0;
+            _currentIngredient = Instantiate(_ingredientSO.slicingMaterial[_ingredientSO.totalSliced], _summonPost.position, Quaternion.identity);
         }
         void Update()
         {
             if (_ingredientSO.sliced)
             {
                 Destroy(_currentIngredient);
-                _currentIngredient = Instantiate(_ingredientSO.slicedMaterial[_ingredientSO.totalSliced], _summonPost.position, Quaternion.identity);
+                _currentIngredient = Instantiate(_ingredientSO.slicingMaterial[_ingredientSO.totalSliced], _summonPost.position, Quaternion.identity);
                 _ingredientSO.sliced = false;
             }
-            if (_ingredientSO.totalSliced >= 4)
+            if (_ingredientSO.totalSliced == (_ingredientSO.slicingMaterial.Count - 1))
             {
                 _ingredientSO.totalSliced = 0;
                 SceneHandler.instance.NextStep();

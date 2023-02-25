@@ -11,4 +11,5 @@ public class MaterialSO : ScriptableObject
         public GameObject materialUIPrefab;
     }
     public List<Material> materialList = new List<Material>();
+    public int numberOfMaterialNeeded;
 }

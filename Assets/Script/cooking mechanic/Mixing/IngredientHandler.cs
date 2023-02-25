@@ -19,7 +19,13 @@ namespace Mixing.Ingredient
             else if (instance != this)
                 //...destroy this one because it is a duplicate.
                 Destroy(gameObject);
-            _currentIngredient = Instantiate(_ingredientSO.smoothMaterial, _summonPost.position, Quaternion.identity);
+
+            _ingredientSO = SceneHandler.instance.getIngredientSO();
+        }
+
+        private void Start()
+        {
+            _currentIngredient = Instantiate(_ingredientSO.mixingMaterial, _summonPost.position, Quaternion.identity);
         }
     }
 }

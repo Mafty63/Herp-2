@@ -25,3 +25,4 @@ MonoBehaviour:
     materialUIPrefab: {fileID: 6792546264424224170, guid: 0528e910b8011bd4cb1b4269029043c7, type: 3}
   - materialName: Sledri
     materialUIPrefab: {fileID: 4859316566389479206, guid: ad3901a7678a36343a9e730c6223d4a9, type: 3}
+  numberOfMaterialNeeded: 6
