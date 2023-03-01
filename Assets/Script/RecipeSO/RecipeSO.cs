@@ -4,7 +4,6 @@ using UnityEngine;
 [CreateAssetMenu(fileName = "Recipe", menuName = "Developer/Recipe")]
 public class RecipeSO : ScriptableObject
 {
-    public List<string> listOfName = new List<string>();
     public enum stepEnum
     {
         Filtering,
@@ -29,15 +28,4 @@ public class RecipeSO : ScriptableObject
 
     public List<recipe> recipes = new List<recipe>();
 
-
-    private void Awake()
-    {
-        if (recipes.Count > 0)
-        {
-            for (int i = 0; i < recipes.Count; i++)
-            {
-                listOfName.Add(recipes[i].name);
-            }
-        }
-    }
 }
