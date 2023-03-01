@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6b3292009b951d8468f376fa40864d11, type: 3}
+  m_Name: Recipe
+  m_EditorClassIdentifier: 
+  recipes:
+  - name: jamu sinom
+    steps:
+    - stepName: 3
+      Ingredient: {fileID: 11400000, guid: 2fb3805c57f0257409a7b525b2643695, type: 2}
+    - stepName: 1
+      Ingredient: {fileID: 11400000, guid: 2fb3805c57f0257409a7b525b2643695, type: 2}
+    - stepName: 4
+      Ingredient: {fileID: 11400000, guid: 2fb3805c57f0257409a7b525b2643695, type: 2}
+    - stepName: 2
+      Ingredient: {fileID: 11400000, guid: 2fb3805c57f0257409a7b525b2643695, type: 2}

@@ -48,9 +48,46 @@ public class SceneHandler : MonoBehaviour
     public void NextStep()
     {
         _currentRecipeSteps++;
-        if (_currentRecipeSteps <= _recipeSO.recipes[_currentRecipeIndex].steps.Count)
+        if (_currentRecipeSteps < _recipeSO.recipes[_currentRecipeIndex].steps.Count)
         {
-            SceneManager.LoadScene(_recipeSO.recipes[_currentRecipeIndex].steps[_currentRecipeSteps].sceneName);
+            switch (_recipeSO.recipes[_currentRecipeIndex].steps[_currentRecipeSteps].stepName)
+            {
+                case RecipeSO.stepEnum.Filtering:
+                    {
+                        SceneManager.LoadScene("FILTERING");
+                        break;
+                    }
+
+                case RecipeSO.stepEnum.Mixing:
+                    {
+                        SceneManager.LoadScene("MIXING");
+                        break;
+                    }
+
+                case RecipeSO.stepEnum.Peeling:
+                    {
+                        SceneManager.LoadScene("PEELING");
+                        break;
+                    }
+
+                case RecipeSO.stepEnum.Slicing:
+                    {
+                        SceneManager.LoadScene("SLICING");
+                        break;
+                    }
+
+                case RecipeSO.stepEnum.Smoothing:
+                    {
+                        SceneManager.LoadScene("SMOOTHING");
+                        break;
+                    }
+
+                case RecipeSO.stepEnum.Stiring:
+                    {
+                        SceneManager.LoadScene("STIRING");
+                        break;
+                    }
+            }
         }
         else
         {
@@ -58,7 +95,7 @@ public class SceneHandler : MonoBehaviour
         }
     }
 
-    public void button(string recipeName)
+    public void selectRecipeUI(string recipeName)
     {
         _recipeName = recipeName.ToUpper();
     }
@@ -66,5 +103,9 @@ public class SceneHandler : MonoBehaviour
     public IngredientSO getIngredientSO()
     {
         return _recipeSO.recipes[_currentRecipeIndex].steps[_currentRecipeSteps].Ingredient;
+    }
+    public void aa(RecipeSO.stepEnum stepenum)
+    {
+
     }
 }

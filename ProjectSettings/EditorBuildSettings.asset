@@ -6,17 +6,11 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/HOME.unity
-    guid: 8f2b72dac5a71864ab1e895f2031a323
-  - enabled: 1
     path: Assets/Scenes/SLICING.unity
     guid: 8c9cfa26abfee488c85f1582747f6a02
   - enabled: 1
     path: Assets/Scenes/SMOOTHING.unity
     guid: 302fe7569b3c6d1469debf4ba718a87e
-  - enabled: 1
-    path: Assets/Scenes/BOILING.unity
-    guid: 71f934128ca6f154faf38eb620dbf01c
   - enabled: 1
     path: Assets/Scenes/MIXING.unity
     guid: d84ba6290881cc34c83a120297b634bb
@@ -26,4 +20,19 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/END.unity
     guid: 448180e15195da941aa590b62becdf6d
+  - enabled: 1
+    path: Assets/Scenes/FILTERING.unity
+    guid: 5d6015f7cd19eea46820e5e31b790ddc
+  - enabled: 1
+    path: Assets/Scenes/MAIN MENU.unity
+    guid: 5e0761dc2b067a7468cb72985a9bdc12
+  - enabled: 1
+    path: Assets/Scenes/PREPARATION.unity
+    guid: c8cb00a01884c1f44a5c4defd123b464
+  - enabled: 1
+    path: Assets/Scenes/RECIPE.unity
+    guid: 1494c740c8cd01143a3ffa4f6e7c69b1
+  - enabled: 1
+    path: Assets/Scenes/STIRING.unity
+    guid: a2bd67454b5454147ac8a493bf91f466
   m_configObjects: {}
